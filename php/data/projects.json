@@ -1,0 +1,55 @@
+[
+    {
+        "title": "By Penny Blossom Portfolio",
+        "alt": "By Penny Blossom Portfolio Screenshot",
+        "imagePath":"./assets/images/projects/ByPennyBlossom.png",
+        "description": "Freelance Project",
+        "techStack":["HTML", "PHP", "TailwindCSS", "JavaScript"],
+        "viewCodeLink": "https://github.com/Cruse180795/By-Penny-Blossom-Online-Portfolio",
+        "viewProjectLink": ""
+    },
+    {
+        "title": "Gazetteer",
+        "alt": "Gazetteer Screenshot",
+        "imagePath":"./assets/images/projects/Gazetteer.png",
+        "description": "IT Career Switch Project 1",
+        "techStack":["HTML", "PHP", "BootsStrap", "JQuery", "Various API's", "Postman"],
+        "viewCodeLink": "https://github.com/Cruse180795/ryanCruse/tree/master/ProjectOne/Public",
+        "viewProjectLink": "https://gazetteerrc.infinityfreeapp.com/?i=1"
+    },
+    {
+        "title": "Company Directory",
+        "alt": "Company Directory Screenshot",
+        "imagePath":"./assets/images/projects/CompanyDirectory.png",
+        "description": "IT Career Switch Project 2",
+        "techStack":["HTML", "PHP", "BootsStrap", "JQuery", "SQL", "Postman"],
+        "viewCodeLink": "https://github.com/Cruse180795/ryanCruse/tree/master/ProjectTwo/Public",
+        "viewProjectLink": "http://companydirectoryrc.infinityfreeapp.com/?i=1"
+    },
+    {
+        "title": "Advice Generator",
+        "alt": "Advice Generate Screenshot",
+        "imagePath":"./assets/images/projects/AdviceGenerator.png",
+        "description": "Frontend Mentor Project",
+        "techStack":["HTML", "CSS", "JavaScript", "Slip API", "Postman", "Figma"],
+        "viewCodeLink": "https://github.com/Cruse180795/Advice-Generator-App",
+        "viewProjectLink": "https://ryancruseadvicegeneratorapp.netlify.app/"
+    },
+    {
+        "title": "Space Defender",
+        "alt": "Space Defender Screenshot",
+        "imagePath":"./assets/images/projects/SpaceDefender.png",
+        "description": "Hobby Project",
+        "techStack":["Unity", "C#"],
+        "viewProjectLink": "https://rcruse1807.itch.io/space-defender"
+    },
+    {
+        "title": "Block Breaker 2D",
+        "alt": "Block Breaker Screenshot",
+        "imagePath":"./assets/images/projects/BlockBreaker2D.png",
+        "description": "Hobby Project",
+        "techStack":["Unity", "C#"],
+        "viewProjectLink": "https://rcruse1807.itch.io/block-breaker-2d"
+    }
+    
+]
