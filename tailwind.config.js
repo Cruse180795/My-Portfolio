@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'sans':['Poppins','Sans-serif']
+        'poppins':['Poppins','Sans-serif'],
+        'nunito':['Nunito', 'Sans-serif']
       },
       colors:{
         '80082-LightGray': '#6E7886',

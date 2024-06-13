@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import path from 'path'
+
+import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
     root: 'src',
+    publicDir: path.resolve(__dirname, 'public'),
     build: {
         outDir: path.resolve(__dirname, 'dist'), // Ensure outDir is inside the project root
         rollupOptions: {
@@ -19,4 +21,4 @@ export default defineConfig({
         },
         },
     },
-})
+});
