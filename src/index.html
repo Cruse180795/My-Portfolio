@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+<head class="scroll-smooth">
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,18 +23,18 @@
     rel="stylesheet">
 
 
-  <link rel="stylesheet" href="..//public/packages/fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../public/packages/fontAwesome/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class=" font-poppins overflow-x-hidden">
+<body class="bg-80082-DarkGray font-poppins overflow-x-hidden">
 
   <header class="min-h-screen bg-80082-DarkGray space-y-10 text-white">
-    <nav class="fixed w-full z-10 top-0 start-0  bg-white/20 backdrop-blur-sm shadow-xl">
+    <nav class=" w-full z-10 top-0 start-0  bg-inherit">
       <div class="flex items-center justify-between flex-wrap p-4 md:px-8 md:p-5 md:py-6 lg:px-[165px]">
         <!--Brand-->
         <a
-          class="font-extrabold italic text-2xl font-nunito tracking-[-0.33px] md:text-[32px] md:leading-[32px] md:tracking-[-0.44px]">Ryan
+          class="font-extrabold italic text-2xl leading-[32px] font-nunito tracking-[-0.33px]  md:text-[32px]  md:tracking-[-0.44px]">Ryan
           Cruse</a>
 
         <!--CV & Hamburger Buttons-->
@@ -61,16 +61,13 @@
           <ul
             class="flex flex-col p-4 mt-4 font-medium font-nunito border border-white rounded-md md:space-x-8 md:flex-row md:mt-0 md:border-0 md:p-0 lg:space-x-14">
             <li>
-              <a href="#skills"
-                class="block py-2 px-3 transition-all ease-in-out duration-700 md:text-lg md:p-0 md:leading-[32px] md:tracking-[-0.44px]  hover:text-80082-Pink hover:-translate-y-0.5  active:text-80082-Blue">Skills</a>
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li>
-              <a href="#projects"
-                class="block py-2 px-3 transition-all ease-in-out duration-700 md:text-lg md:p-0 md:leading-[32px] md:tracking-[-0.44px] hover:text-80082-Pink hover:-translate-y-0.5 active:text-80082-Blue">Projects</a>
+              <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li>
-              <a href="#contact"
-                class="block py-2 px-3 transition-all ease-in-out duration-700 md:text-lg  md:p-0 md:leading-[32px] md:tracking-[-0.44px] hover:text-80082-Pink hover:-translate-y-0.5 active:text-80082-Blue">Contact</a>
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -81,11 +78,41 @@
 
 
 
+  <main class="px-4 md:px-8 lg:px-[165px]">
+
+    <section id="projects" class="space-y-7 text-white mb-12 scroll-mt-10">
+
+      <div class="flex flex-row justify-center items-center space-x-2">
+        <hr class="border-2 border-80082-Pink w-full ">
+        <h2
+          class="font-bold font-nunito italic tracking-[-1.14px] text-[40px] leading-[40px] bg-gradient-to-r from-80082-Pink to-80082-Blue inline-block text-transparent bg-clip-text">
+          Projects</h2>
+        <hr class="border-2 border-80082-Blue w-full">
+      </div>
+
+      <p class="section__body">Check out
+        some of my projects ranging from web
+        development to
+        game development. More can be
+        found at my
+        <a href="https://github.com/Cruse180795"
+          class="text-80082-Blue capitalize transition-all ease-in-out duration-700 hover:text-80082-Pink">github
+          page</a>.
+      </p>
+
+      <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3 lg:gap-y-4" id="projectContainer">
+      </div>
+    </section>
+
+
+  </main>
+
+
 
 
 
   <footer
-    class="bg-80082-DarkGray flex flex-col items-center justify-center text-white p-5 text-center space-y-5 border-t-2 md:space-y-0 md:flex-row lg:px-[166px] md:justify-between lg:p-6">
+    class="bg-80082-DarkGray flex flex-col items-center justify-center text-white p-5 text-center space-y-5 border-t-2 md:px-8 md:space-y-0 md:flex-row lg:px-[166px] md:justify-between lg:p-6">
     <h2 class="font-nunito font-bold leading-[32px] tracking-[0.33px] text-2xl">
       Ryan Cruse</h2>
     <ul

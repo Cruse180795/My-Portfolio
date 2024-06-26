@@ -16,3 +16,14 @@
 #hamburger.active .bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
+
+
+@layer components {
+    .nav__link {
+        @apply block py-2 px-3 transition-all ease-in-out duration-700 md:text-lg md:p-0 md:leading-[32px] md:tracking-[-0.44px] hover:text-80082-Pink hover:-translate-y-0.5 active:text-80082-Blue;
+    }
+
+    .section__body {
+        @apply text-center text-base font-poppins font-medium leading-[26px] md:text-lg;
+    }
+}
