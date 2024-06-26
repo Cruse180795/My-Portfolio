@@ -1,42 +1,26 @@
 [
     {
-        "title": "HTML",
-        "experience": "2 Years Experience"
+        "title": "HTML"
     },
     {
-        "title": "CSS",
-        "experience": "2 Years Experience"
+        "title": "CSS"
     },
     {
-        "title": "JavaScript",
-        "experience": "2 Years Experience"
+        "title": "JavaScript"
     },
     {
-        "title": "PHP",
-        "experience": "2 Years Experience"
+        "title": "PHP"
     },
     {
-        "title": "TailwindCSS",
-        "experience": "2 Years Experience"
+        "title": "TailwindCSS"
     },
     {
-        "title": "BootStrap",
-        "experience": "2 Years Experience"
+        "title": "BootStrap"
     },
     {
-        "title": "VS Code",
-        "experience": "2 Years Experience"
+        "title": "Git"
     },
     {
-        "title": "Figma",
-        "experience": "2 Years Experience"
-    },
-    {
-        "title": "Git",
-        "experience": "2 Years Experience"
-    },
-    {
-        "title": "Github",
-        "experience": "2 Years Experience"
+        "title": "Github"
     }
 ]

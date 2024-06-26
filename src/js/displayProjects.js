@@ -6,7 +6,7 @@ export async function displayProjects(){
                 
                 data['data'].forEach((entry) => {
                     let container = document.createElement('div');
-                    container.classList.add('flex', 'flex-col', 'justify-between', 'h-full', 'shadow-md',  'rounded-lg', 'shadow-80082-LightGray',  'space-y-5', 'text-white', 'font-nunito'); 
+                    container.classList.add('flex', 'flex-col', 'justify-between', 'h-full', 'shadow-xl',  'rounded-lg', 'border', 'border-black',  'space-y-5', 'text-white', 'font-nunito'); 
                 
                     
 
@@ -57,8 +57,17 @@ export async function displayProjects(){
                     let visitProject = document.createElement('a');
                     visitProject.setAttribute('href', `${entry.viewProjectLink}`);
                     visitProject.setAttribute('target', '_blank');
-                    visitProject.classList.add('uppercase', 'block', 'font-bold', 'leading-6', 'tracking-widest', 'underline', 'underline-offset-4', 'decoration-80082-Blue', 'transition-all', 'duration-500', 'hover:text-80082-Blue');
+
+                    if(!entry.viewProjectLink){
+                        let currentProject = document.createElement('p');
+                        currentProject.classList.add('uppercase','block', 'font-bold', 'leading-6', 'tracking-widest', 'text-80082-Pink');
+                        currentProject.textContent = 'In Development';
+                        linksContainer.append(currentProject);
+                    }else{
+                        visitProject.classList.add('uppercase', 'block', 'font-bold', 'leading-6', 'tracking-widest', 'underline', 'underline-offset-4', 'decoration-80082-Blue', 'transition-all', 'duration-500', 'hover:text-80082-Blue');
                     visitProject.textContent = 'View Project';
+                    }
+                    
                     linksContainer.append(visitProject);
                 
                     // Visit Code Link

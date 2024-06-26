@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head class="scroll-smooth">
+<head>
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,9 +33,10 @@
     <nav class=" w-full z-10 top-0 start-0  bg-inherit">
       <div class="flex items-center justify-between flex-wrap p-4 md:px-8 md:p-5 md:py-6 lg:px-[165px]">
         <!--Brand-->
-        <a
-          class="font-extrabold italic text-2xl leading-[32px] font-nunito tracking-[-0.33px]  md:text-[32px]  md:tracking-[-0.44px]">Ryan
-          Cruse</a>
+        <h1
+          class="font-extrabold italic text-2xl leading-[32px] font-nunito tracking-[-0.33px]  md:text-[32px]  md:tracking-[-0.44px]">
+          Ryan
+          Cruse</h1>
 
         <!--CV & Hamburger Buttons-->
         <div class="flex items-center space-x-4 md:order-2">
@@ -78,14 +79,14 @@
 
 
 
-  <main class="px-4 md:px-8 lg:px-[165px]">
+  <main class="space-y-10 my-10">
 
-    <section id="projects" class="space-y-7 text-white mb-12 scroll-mt-10">
+    <section id="projects" class="space-y-7 text-white p-4 scroll-mt-2 md:px-8 lg:px-[165px] ">
 
       <div class="flex flex-row justify-center items-center space-x-2">
         <hr class="border-2 border-80082-Pink w-full ">
         <h2
-          class="font-bold font-nunito italic tracking-[-1.14px] text-[40px] leading-[40px] bg-gradient-to-r from-80082-Pink to-80082-Blue inline-block text-transparent bg-clip-text">
+          class="font-bold font-nunito italic tracking-[-1.14px] text-[40px] leading-[40px] bg-gradient-to-r via-80082-Blue from-80082-Pink to-80082-Blue inline-block text-transparent bg-clip-text">
           Projects</h2>
         <hr class="border-2 border-80082-Blue w-full">
       </div>
@@ -104,6 +105,19 @@
       </div>
     </section>
 
+
+    <section id="skills" class=" text-white space-y-7 p-4 scroll-mt-2 md:px-8 lg:px-[165px]">
+      <div class="flex flex-row justify-center items-center space-x-2">
+        <hr class="border-2 border-80082-Blue w-full ">
+        <h2
+          class="font-bold font-nunito italic tracking-[-1.14px] text-[40px] leading-[40px] bg-gradient-to-l via-80082-Pink from-80082-Pink to-80082-Blue inline-block text-transparent bg-clip-text">
+          Skills</h2>
+        <hr class="border-2 border-80082-Pink w-full">
+      </div>
+
+      <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-4 lg:gap-y-4 lg:grid-cols-4" id="skillsContainer">
+      </div>
+    </section>
 
   </main>
 
