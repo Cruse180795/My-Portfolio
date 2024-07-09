@@ -9,12 +9,12 @@ export async function displaySkills(){
 
         //Skills Card Div
         let skillsCard = document.createElement('div');
-        skillsCard.classList.add( 'rounded-2xl', 'space-y-2', 'p-5', 'border', 'border-black', 'shadow-xl',  'w-full', 'h-full', 'flex', 'flex-col', 'justify-center', 'items-center', 'transition', 'ease-in-out', 'duration-500', 'hover:scale-105');
+        skillsCard.classList.add( 'rounded-2xl', 'space-y-2', 'p-5', 'text-center');
         skillsContainer.append(skillsCard);
 
         //Skills Card Title
         let skillsTitle = document.createElement('h2');
-        skillsTitle.classList.add('font-bold', 'text-2xl', 'leading-10', 'tracking-[-1px]');
+        skillsTitle.classList.add('font-bold', 'text-2xl', 'leading-10', 'tracking-[-1px]', 'font-nunito');
         skillsTitle.textContent = `${entry.title}`;
         skillsCard.append(skillsTitle);
     });

@@ -26,6 +26,10 @@ html {
     }
 
     .section__body {
-        @apply text-center text-base font-poppins font-medium leading-[26px] md:text-lg;
+        @apply text-base font-poppins font-medium leading-[26px] md:text-lg;
+    }
+
+    .section__title {
+        @apply text-white font-bold font-nunito italic tracking-[-1.14px] text-[40px] leading-[40px] lg:text-[88px] lg:leading-[88px] lg:tracking-[-2.5px];
     }
 }

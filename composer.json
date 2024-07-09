@@ -1,0 +1,17 @@
+{"name": "ryanc/my-portfolio",
+    "autoload": {
+        "psr-4": {
+            "Ryanc\\MyPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ryan",
+            "email": "ryancruse1807@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
