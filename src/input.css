@@ -22,7 +22,11 @@ html {
 
 @layer components {
     .nav__link {
-        @apply block py-2 px-3 transition-all ease-in-out duration-700 md:text-lg md:p-0 md:leading-[32px] md:tracking-[-0.44px] hover:text-80082-Pink hover:-translate-y-0.5 active:text-80082-Blue;
+        @apply block py-2 px-3 transition-all ease-in-out duration-700 md:text-lg md:p-0 md:leading-[32px] md:tracking-[-0.44px] md:px-5 lg:px-8 lg:text-xl hover:text-80082-Pink hover:-translate-y-0.5 active:text-80082-Blue;
+    }
+
+    .section__container {
+        @apply px-4 md:px-8 lg:px-[165px];
     }
 
     .section__body {

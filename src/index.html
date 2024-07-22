@@ -8,7 +8,10 @@
   <title>Ryan Cruse | Portfolio</title>
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/public/images/favicon_io/site.webmanifest">
 
   <!--Imported Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +36,7 @@
 <body class="bg-80082-DarkGray text-white font-poppins overflow-x-hidden">
 
   <header class="min-h-screen bg-80082-DarkGray space-y-10 text-white">
-    <nav class=" w-full z-10 top-0 start-0  bg-inherit">
+    <nav class=" w-full z-10 top-0 start-0 bg-inherit">
       <div class="flex items-center justify-between flex-wrap p-4 md:px-8 md:p-5 md:py-6 lg:px-[165px]">
         <!--Brand-->
         <h1
@@ -45,11 +48,11 @@
         <div class="flex items-center space-x-4 md:order-2">
 
           <a href="../cv.pdf" download="Ryan Cruse CV"
-            class="font-nunito font-medium flex items-center px-4 py-2 border-2 shadow-2xl rounded-lg transition-all ease-in-out duration-700 hover:bg-80082-Pink hover:border-80082-Pink active:bg-80082-Blue active:text-white active:border-80082-Blue md:leading-[32px] md:tracking-[-0.44px] lg:px-8 lg:text-lg"
+            class=" font-medium flex items-center px-4 py-2 border-2 shadow-2xl rounded-lg transition-all ease-in-out duration-700 border-80082-Blue hover:text-80082-Pink hover:border-80082-Pink md:leading-[32px] md:tracking-[-0.44px] md:px-5 lg:px-8 lg:text-lg"
             role="button" aria-label="Download Ryan Cruse CV">
             <span class="flex flex-row gap-x-2 items-center">
               CV
-              <i class="fa-solid fa-download fa-sm fa-beat" aria-hidden="true"></i>
+              <i class="fa-solid fa-download fa-sm fa-beat-fade" aria-hidden="true"></i>
             </span>
           </a>
 
@@ -63,12 +66,12 @@
         <!--Menu Items-->
         <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="menu">
           <ul
-            class="flex flex-col p-4 mt-4 font-medium font-nunito border border-white rounded-md md:space-x-8 md:flex-row md:mt-0 md:border-0 md:p-0 lg:space-x-14">
-            <li>
-              <a href="#projects" class="nav__link">Projects</a>
-            </li>
+            class="flex flex-col p-4 mt-4 font-medium font-nunito border-2 border-white rounded-md md:space-x-8 md:flex-row md:mt-0 md:border-0 md:p-0 lg:space-x-14">
             <li>
               <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li>
               <a href="#contact" class="nav__link">Contact</a>
@@ -78,18 +81,49 @@
       </div>
     </nav>
 
+    <section class="section__container space-y-8 lg:pt-10 lg:grid lg:grid-cols-3 ">
+      <!--Graphic display-->
+      <div class="lg:col-span-1 lg:order-2 lg:pt-10">
+        <img src="/public/images/avataaars.webp" alt="Icon Avatar" loading="lazy" width="100%" height="100%"
+          class="w-[75%] rounded-full mx-auto shadow-2xl md:w-[50%] lg:w-full">
+      </div>
+      <!--About Content-->
+      <div class="text-center space-y-5 lg:col-span-2 lg:order-1 lg:text-left lg:space-y-10">
+        <h2 class="section__title lg:pr-[100px]">Nice to meet you! Im <span
+            class="underline underline-offset-8 decoration-80082-Pink">Ryan
+            Cruse</span>.</h2>
+        <p class="section__body lg:pr-[360px]">Based in the UK, I'm a full-stack developer passionate about building
+          accessible web apps that users
+          love.</p>
+
+        <div class="pt-4 lg:pt-[65px]">
+          <a href="#contact" role="button" aria-label="Contact Me Button"
+            class="flex gap-x-2 items-center justify-center w-1/2 mx-auto uppercase text-base leading-[26px] tracking-[2.29px] px-4 py-2 border-2 rounded-lg border-80082-Blue transition-all ease-in-out duration-700 hover:text-80082-Pink hover:border-80082-Pink lg:mx-0 lg:w-1/4">Contact
+            Me
+            <i class="fa-solid fa-envelope fa-sm fa-beat-fade" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
   </header>
 
 
 
-  <main class=" ">
+  <main class="space-y-20 mt-20">
 
-    <section id="projects" class="space-y-7 text-white p-4 scroll-mt-2 md:px-8 lg:px-[165px] ">
+    <section id="skills" class="section__container text-white space-y-10 scroll-mt-2 ">
+      <hr class="border-2 border-white">
+      <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-4 lg:gap-y-4 lg:grid-cols-4" id="skillsContainer">
+      </div>
+      <hr class="border-2 border-white">
+    </section>
+
+
+    <section id="projects" class="section__container space-y-7 bg-80082-DarkGray scroll-mt-2">
 
       <div class="text-center space-y-5">
         <h2 class="section__title">
           Projects</h2>
-
 
         <p class="section__body">Check out
           some of my projects ranging from web
@@ -102,24 +136,20 @@
         </p>
       </div>
 
-
       <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3 lg:gap-y-4" id="projectContainer">
       </div>
     </section>
 
 
-    <section id="skills" class=" text-white space-y-7 p-4 scroll-mt-2 md:px-8 lg:px-[165px]">
 
-      <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-4 lg:gap-y-4 lg:grid-cols-4" id="skillsContainer">
-      </div>
-    </section>
+
 
 
     <section id="contact"
-      class="bg-black mb-0 space-y-11 p-4 scroll-mt-2 md:px-8 lg:px-[165px] lg:grid lg:grid-cols-2 lg:gap-x-[300px] py-20">
+      class="section__container bg-black mb-0 space-y-11 scroll-mt-2 lg:grid lg:grid-cols-2 lg:gap-x-[300px] py-20">
 
-      <div class="text-center space-y-5 lg:text-left lg:space-y-[36px] mt-10">
-        <h2 class="section__title">
+      <div class="text-center space-y-5 lg:text-left lg:space-y-[36px] lg:mt-10">
+        <h2 class="text-white section__title">
           Contact</h2>
         <p class="section__body">If you wish to get in touch please fill out the form below, and i'll get back to you as
           see as possible.</p>
@@ -131,11 +161,11 @@
 
           <div class="flex items-center justify-between">
             <label for="name" class="uppercase block pl-4">Name:</label>
-            <p class="text-red-300 pl-4 text-xs md:text-sm hidden">Required: Name must be at least 2 characters</p>
+            <p class="text-red-300 pl-4 text-xs  hidden">Required: Name must be at least 2 characters</p>
           </div>
 
           <input type="text" name="name" id="name"
-            class="form-input block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2">
+            class="form-input block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2 rounded-lg">
 
         </div>
 
@@ -143,12 +173,12 @@
 
           <div class="flex items-center justify-between">
             <label for="email" class="uppercase block pl-4">Email:</label>
-            <p class="text-red-300 pl-4 text-xs md:text-sm hidden">Required: Email must meet correct format</p>
+            <p class="text-red-300 pl-4 text-xs  hidden">Required: Email must meet correct format</p>
           </div>
 
           <div class="relative">
             <input type="email" name="email" id="email"
-              class="form-input block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2">
+              class="form-input block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2 rounded-lg">
             <i class="fa-regular fa-circle-check fa-xl absolute top-[50%] left-[91%] hidden"></i>
           </div>
 
@@ -157,30 +187,35 @@
         <div class="space-y-4" id="subjectContainer">
           <div class="flex items-center justify-between">
             <label for="subject" class="uppercase block pl-4">Subject:</label>
-            <p class="text-red-300 pl-4 text-xs md:text-sm hidden">Name must be at least 2 characters</p>
+            <p class="text-red-300 pl-4 text-xs hidden">Name must be at least 2 characters</p>
           </div>
 
           <input type="text" name="subject" id="subject"
-            class="form-input block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2">
+            class="form-input block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2 rounded-lg">
         </div>
 
         <div class="space-y-4" id="messageContainer">
           <div class="flex items-center justify-between">
             <label for="message" class="uppercase block pl-4">Message:</label>
-            <p class="text-red-300 pl-4 text-xs md:text-sm hidden">Name must be at least 2 characters</p>
+            <p class="text-red-300 pl-4 text-xs  hidden">Name must be at least 2 characters</p>
           </div>
 
           <textarea name="message" id="message" rows="5"
-            class="block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2 "></textarea>
+            class="block w-full border-2 border-80082-LightGray bg-transparent outline-none pl-4 py-2 rounded-lg "></textarea>
         </div>
 
-        <div class="g-recaptcha" data-sitekey="6Lc_-wsqAAAAAJTI_W1-2pnaRaUyqFEhwOYo8Rsw"></div>
+        <div class="flex justify-end">
+          <div class="g-recaptcha" data-sitekey="6Lc_-wsqAAAAAJTI_W1-2pnaRaUyqFEhwOYo8Rsw"></div>
+        </div>
+
+
 
 
         <div class="flex justify-end pt-4">
           <button type="submit"
-            class="uppercase border-b-2 border-t-0 border-80082-Blue pb-[10px] transition-all ease-out duration-700 hover:text-80082-Blue">Send
-            Message</button>
+            class="flex gap-x-2 items-center uppercase text-base leading-[26px] tracking-[2.29px] px-4 py-2  border-2 rounded-lg border-80082-Blue transition-all ease-in-out duration-700 hover:text-80082-Pink hover:border-80082-Pink">Send
+            Message
+            <i class="fa-solid fa-envelope fa-sm fa-beat-fade" aria-hidden="true"></i></button>
         </div>
       </form>
 
@@ -188,8 +223,8 @@
   </main>
 
 
-  <footer class="bg-black text-white text-center px-4 md:px-8 lg:px-[166px]">
-    <hr class="border border-white ">
+  <footer class="bg-black text-white text-center section__container">
+    <hr class="border-2 border-white">
 
     <div
       class="flex flex-col items-center justify-center py-10 space-y-5  md:space-y-0 md:flex-row md:justify-between md:py-[60px]">

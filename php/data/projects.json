@@ -2,53 +2,53 @@
     {
         "title": "By Penny Blossom Portfolio",
         "alt": "By Penny Blossom Portfolio Screenshot",
-        "imagePath":"/public/images/byPennyBlossom.webp",
+        "imagePath":"/public/images/projects/byPennyBlossom.webp",
         "description": "Freelance Project",
-        "techStack":["HTML,", "PHP,", "TailwindCSS,", "JavaScript,","MYSQL"],
+        "techStack":["HTML", "PHP", "TailwindCSS", "JavaScript","MYSQL"],
         "viewCodeLink": "https://github.com/Cruse180795/By-Penny-Blossom-Online-Portfolio",
         "viewProjectLink": ""
     },
     {
         "title": "Gazetteer",
         "alt": "Gazetteer Screenshot",
-        "imagePath":"/public/images/gazetteer.webp",
+        "imagePath":"/public/images/projects/gazetteer.webp",
         "description": "IT Career Switch Project 1",
-        "techStack":["HTML,", "PHP,", "BootsStrap,", "JQuery,", "Various API's,", "Postman"],
+        "techStack":["HTML", "PHP", "Bootstrap", "JQuery", "Various API's", "Postman"],
         "viewCodeLink": "https://github.com/Cruse180795/ryanCruse/tree/master/ProjectOne/Public",
         "viewProjectLink": "https://gazetteerrc.infinityfreeapp.com/?i=1"
     },
     {
         "title": "Company Directory",
         "alt": "Company Directory Screenshot",
-        "imagePath":"/public/images/companyDirectory.webp",
+        "imagePath":"/public/images/projects/companyDirectory.webp",
         "description": "IT Career Switch Project 2",
-        "techStack":["HTML,", "PHP,", "BootsStrap,", "JQuery,", "SQL,", "Postman"],
+        "techStack":["HTML", "PHP", "Bootstrap", "JQuery", "MYSQL", "Postman"],
         "viewCodeLink": "https://github.com/Cruse180795/ryanCruse/tree/master/ProjectTwo/Public",
         "viewProjectLink": "http://companydirectoryrc.infinityfreeapp.com/?i=1"
     },
     {
         "title": "Advice Generator",
         "alt": "Advice Generate Screenshot",
-        "imagePath":"/public/images/adviceGenerator.webp",
+        "imagePath":"/public/images/projects/adviceGenerator.webp",
         "description": "Frontend Mentor Project",
-        "techStack":["HTML,", "CSS,", "JavaScript,", "Slip API,", "Postman,", "Figma"],
+        "techStack":["HTML", "CSS", "JavaScript", "Slip API", "Postman", "Figma"],
         "viewCodeLink": "https://github.com/Cruse180795/Advice-Generator-App",
         "viewProjectLink": "https://ryancruseadvicegeneratorapp.netlify.app/"
     },
     {
         "title": "Space Defender",
         "alt": "Space Defender Screenshot",
-        "imagePath":"/public/images/spaceDefender.webp",
+        "imagePath":"/public/images/projects/spaceDefender.webp",
         "description": "Hobby Project",
-        "techStack":["Unity,", "C#"],
+        "techStack":["Unity", "C#"],
         "viewProjectLink": "https://rcruse1807.itch.io/space-defender"
     },
     {
         "title": "Block Breaker 2D",
         "alt": "Block Breaker Screenshot",
-        "imagePath":"/public/images/blockBreaker.webp",
+        "imagePath":"/public/images/projects/blockBreaker.webp",
         "description": "Hobby Project",
-        "techStack":["Unity,", "C#"],
+        "techStack":["Unity", "C#"],
         "viewProjectLink": "https://rcruse1807.itch.io/block-breaker-2d"
     }
     

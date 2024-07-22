@@ -17,5 +17,12 @@ export async function displaySkills(){
         skillsTitle.classList.add('font-bold', 'text-2xl', 'leading-10', 'tracking-[-1px]', 'font-nunito');
         skillsTitle.textContent = `${entry.title}`;
         skillsCard.append(skillsTitle);
+
+        //Skills Experience
+        let skillsExperience = document.createElement('p');
+        skillsExperience.classList.add('leading-[26px]', 'text-base', 'font-poppins')
+        skillsExperience.textContent = `${entry.experience}`;
+
+        skillsCard.append(skillsExperience)
     });
 }

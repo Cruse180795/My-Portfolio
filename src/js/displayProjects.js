@@ -6,7 +6,7 @@ export async function displayProjects(){
                 
                 data['data'].forEach((entry) => {
                     let container = document.createElement('div');
-                    container.classList.add('flex', 'flex-col', 'justify-between', 'h-full', 'shadow-xl',  'rounded-lg', 'border', 'border-black',  'space-y-5', 'text-white', 'font-nunito'); 
+                    container.classList.add('flex', 'flex-col', 'justify-between', 'h-full', 'shadow-2xl',   'rounded-lg', 'border-2', 'border-black', 'space-y-5', 'text-white', 'font-nunito'); 
                 
                     
 
@@ -14,12 +14,13 @@ export async function displayProjects(){
                     let projectImage = document.createElement('img');
                     projectImage.setAttribute('src', `${entry.imagePath}`);
                     projectImage.setAttribute('alt', `${entry.alt}`)
+                    projectImage.setAttribute('loading', 'lazy');
                     projectImage.classList.add( 'aspect-video', 'rounded-lg','rounded-b-none'); 
                     container.append(projectImage);
                 
                     // Project Details Container
                     let projectDetailsContainer = document.createElement('div');
-                    projectDetailsContainer.classList.add('space-y-3', 'flex-grow', 'p-4'); 
+                    projectDetailsContainer.classList.add('space-y-3', 'flex-grow', 'p-4', 'pb-6'); 
                     container.append(projectDetailsContainer);
                 
                     // Title
@@ -43,7 +44,7 @@ export async function displayProjects(){
                     // List Items
                     entry.techStack.forEach(tech => {
                         let listItem = document.createElement('li');
-                        listItem.classList.add('font-medium', 'text-sm', 'leading-7', 'font-poppins');
+                        listItem.classList.add('font-medium', 'text-sm', 'leading-7', 'font-nunito',  'bg-80082-LightGray', 'rounded-lg', 'px-2', 'shadow-2xl');
                         listItem.textContent = tech;
                         list.append(listItem);
                     });
@@ -73,6 +74,7 @@ export async function displayProjects(){
                     // Visit Code Link
                     let visitCode = document.createElement('a');
                     visitCode.setAttribute('href', `${entry.viewCodeLink}`);
+                    visitCode.setAttribute('target', '_blank');
                     if(!entry.viewCodeLink){
                         visitCode.classList.add('hidden');
                     }else{

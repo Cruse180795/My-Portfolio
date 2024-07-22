@@ -1,9 +1,6 @@
 
 
-const emailContainer = document.getElementById('emailContainer');
-const emailErrorMessage = emailContainer.children[0].children[1];
-const emailInput = emailContainer.children[1].children[0];
-const emailIcon = emailContainer.children[1].children[1];
+
 
 function sanitize(string) {
     const map = {
@@ -19,6 +16,10 @@ function sanitize(string) {
 }
 
 function validateEmailInput(email){
+    const emailContainer = document.getElementById('emailContainer');
+    const emailErrorMessage = emailContainer.children[0].children[1];
+    const emailInput = emailContainer.children[1].children[0];
+    const emailIcon = emailContainer.children[1].children[1];
 
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -243,6 +244,7 @@ export function sendMail() {
                 setTimeout(() => {
                 form.reset();
                 resetFormStyling();
+                grecaptcha.reset();
                 }, 2000); // Adjust the delay time as needed
             }
             
