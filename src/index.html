@@ -33,14 +33,15 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
-<body class="bg-80082-DarkGray text-white font-poppins overflow-x-hidden">
+<body class="bg-80082-DarkGray text-white font-poppins overflow-x-hidden:">
 
-  <header class="min-h-screen bg-80082-DarkGray space-y-10 text-white">
-    <nav class=" w-full z-10 top-0 start-0 bg-inherit">
-      <div class="flex items-center justify-between flex-wrap p-4 md:px-8 md:p-5 md:py-6 lg:px-[165px]">
+  <header class="min-h-dvh bg-80082-DarkGray space-y-10 text-white">
+    <nav
+      class=" w-full z-10 top-0 start-0 bg-inherit animate-fade-down animate-once animate-delay-[500ms] animate-ease-in-out">
+      <div class="flex items-center justify-between flex-wrap p-4 md:px-8 md:p-5 md:py-6 lg:px-[10.3125rem]">
         <!--Brand-->
         <h1
-          class="font-extrabold italic text-2xl leading-[32px] font-nunito tracking-[-0.33px]  md:text-[32px]  md:tracking-[-0.44px]">
+          class="font-extrabold italic text-2xl leading-[2rem] font-nunito tracking-[-0.0206rem]  md:text-[2rem]  md:tracking-[-0.0275rem]">
           Ryan
           Cruse</h1>
 
@@ -48,7 +49,7 @@
         <div class="flex items-center space-x-4 md:order-2">
 
           <a href="../cv.pdf" download="Ryan Cruse CV"
-            class=" font-medium flex items-center px-4 py-2 border-2 shadow-2xl rounded-lg transition-all ease-in-out duration-700 border-80082-Blue hover:text-80082-Pink hover:border-80082-Pink md:leading-[32px] md:tracking-[-0.44px] md:px-5 lg:px-8 lg:text-lg"
+            class=" font-medium flex items-center px-4 py-2 border-2 shadow-2xl rounded-lg transition-all ease-in-out duration-700 border-80082-Blue hover:text-80082-Pink hover:border-80082-Pink md:leading-[2rem] md:tracking-[-0.0275rem] md:px-5 lg:px-8 lg:text-lg"
             role="button" aria-label="Download Ryan Cruse CV">
             <span class="flex flex-row gap-x-2 items-center">
               CV
@@ -81,24 +82,28 @@
       </div>
     </nav>
 
-    <section class="section__container space-y-8 lg:pt-10 lg:grid lg:grid-cols-3 ">
+    <section class="section__container space-y-8 lg:pt-10 lg:grid lg:grid-cols-3">
       <!--Graphic display-->
-      <div class="lg:col-span-1 lg:order-2 lg:pt-10">
+      <div
+        class="lg:col-span-1 lg:order-2 lg:pt-10 animate-fade-left animate-once animate-delay-[1000ms] animate-ease-in-out">
         <img src="/public/images/avataaars.webp" alt="Icon Avatar" loading="lazy" width="100%" height="100%"
-          class="w-[75%] rounded-full mx-auto shadow-2xl md:w-[50%] lg:w-full">
+          class="w-[75%] rounded-full mx-auto shadow-2xl md:w-[50%] lg:w-[25rem]">
       </div>
       <!--About Content-->
-      <div class="text-center space-y-5 lg:col-span-2 lg:order-1 lg:text-left lg:space-y-10">
-        <h2 class="section__title lg:pr-[100px]">Nice to meet you! Im <span
+      <div
+        class="text-center space-y-5 lg:col-span-2 lg:order-1 lg:text-left lg:space-y-10 animate-fade-right animate-once animate-delay-[1000ms] animate-ease-in-out">
+        <h2 class="section__title max-w-[43.875rem]">Nice to meet you! Im <span
             class="underline underline-offset-8 decoration-80082-Pink">Ryan
             Cruse</span>.</h2>
-        <p class="section__body lg:pr-[360px]">Based in the UK, I'm a full-stack developer passionate about building
+        <p class="section__body max-w-[27.8125rem] mx-auto lg:mx-0">Based in the UK, I'm a full-stack developer
+          passionate
+          about building
           accessible web apps that users
           love.</p>
 
-        <div class="pt-4 lg:pt-[65px]">
+        <div class="pt-4 lg:pt-[4.0625rem] animate-fade-up animate-once animate-delay-[1500ms] animate-ease-in-out">
           <a href="#contact" role="button" aria-label="Contact Me Button"
-            class="flex gap-x-2 items-center justify-center w-1/2 mx-auto uppercase text-base leading-[26px] tracking-[2.29px] px-4 py-2 border-2 rounded-lg border-80082-Blue transition-all ease-in-out duration-700 hover:text-80082-Pink hover:border-80082-Pink lg:mx-0 lg:w-1/4">Contact
+            class="flex gap-x-2 items-center justify-center w-1/2 mx-auto uppercase text-base leading-[1.625rem] tracking-[0.1431rem] px-4 py-2 border-2 rounded-lg border-80082-Blue transition-all ease-in-out duration-700 hover:text-80082-Pink hover:border-80082-Pink lg:mx-0 lg:w-1/4">Contact
             Me
             <i class="fa-solid fa-envelope fa-sm fa-beat-fade" aria-hidden="true"></i>
           </a>
@@ -111,7 +116,7 @@
 
   <main class="space-y-20 mt-20">
 
-    <section id="skills" class="section__container text-white space-y-10 scroll-mt-2 ">
+    <section id="skills" class="section__container text-white space-y-10 scroll-mt-1 section__content opacity-0">
       <hr class="border-2 border-white">
       <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-4 lg:gap-y-4 lg:grid-cols-4" id="skillsContainer">
       </div>
@@ -119,7 +124,8 @@
     </section>
 
 
-    <section id="projects" class="section__container space-y-7 bg-80082-DarkGray scroll-mt-2">
+    <section id="projects"
+      class="section__container space-y-7 bg-80082-DarkGray scroll-mt-1 section__content opacity-0">
 
       <div class="text-center space-y-5">
         <h2 class="section__title">
@@ -130,7 +136,7 @@
           development to
           game development. More can be
           found at my
-          <a href="https://github.com/Cruse180795"
+          <a href="https://github.com/Cruse180795" target="_blank"
             class="text-80082-Blue capitalize transition-all ease-in-out duration-700 hover:text-80082-Pink">github
             page</a>.
         </p>
@@ -146,16 +152,16 @@
 
 
     <section id="contact"
-      class="section__container bg-black mb-0 space-y-11 scroll-mt-2 lg:grid lg:grid-cols-2 lg:gap-x-[300px] py-20">
+      class="section__container bg-black mb-0 space-y-11 scroll-mt-1 lg:grid lg:grid-cols-2 lg:gap-x-[18.75rem] py-20 section__content opacity-0">
 
-      <div class="text-center space-y-5 lg:text-left lg:space-y-[36px] lg:mt-10">
+      <div class="text-center space-y-5 lg:text-left lg:space-y-[2.25rem] lg:mt-10">
         <h2 class="text-white section__title">
           Contact</h2>
         <p class="section__body">If you wish to get in touch please fill out the form below, and i'll get back to you as
           see as possible.</p>
       </div>
 
-      <form method="POST" class="space-y-6 lg:space-y-[36px]" id="form">
+      <form method="POST" class="space-y-6 lg:space-y-[2.25rem]" id="form">
 
         <div class="space-y-4" id="nameContainer">
 
@@ -213,7 +219,7 @@
 
         <div class="flex justify-end pt-4">
           <button type="submit"
-            class="flex gap-x-2 items-center uppercase text-base leading-[26px] tracking-[2.29px] px-4 py-2  border-2 rounded-lg border-80082-Blue transition-all ease-in-out duration-700 hover:text-80082-Pink hover:border-80082-Pink">Send
+            class="flex gap-x-2 items-center uppercase text-base leading-[1.625rem] tracking-[0.1431rem] px-4 py-2  border-2 rounded-lg border-80082-Blue transition-all ease-in-out duration-700 hover:text-80082-Pink hover:border-80082-Pink">Send
             Message
             <i class="fa-solid fa-envelope fa-sm fa-beat-fade" aria-hidden="true"></i></button>
         </div>
@@ -227,12 +233,12 @@
     <hr class="border-2 border-white">
 
     <div
-      class="flex flex-col items-center justify-center py-10 space-y-5  md:space-y-0 md:flex-row md:justify-between md:py-[60px]">
+      class="flex flex-col items-center justify-center py-10 space-y-5  md:space-y-0 md:flex-row md:justify-between md:py-[3.75rem]">
       <h2
-        class="font-nunito font-bold tracking-[0.33px] text-2xl md:text-[32px] md:leading-[32px] md:tracking-[-0.44px]">
+        class="font-nunito font-bold tracking-[0.0206rem] text-2xl md:text-[2rem] md:leading-[2rem] md:tracking-[-0.0275rem]">
         Ryan Cruse</h2>
       <ul
-        class="flex flex-col items-center space-y-2 text-base leading-[26px] font-nunito font-medium md:flex-row md:items-center md:space-y-0 md:space-x-4">
+        class="flex flex-col items-center space-y-2 text-base leading-[1.625rem] font-nunito font-medium md:flex-row md:items-center md:space-y-0 md:space-x-4">
         <li
           class="flex items-center gap-x-2 transition-all ease-in-out duration-700 hover:text-80082-Pink active:text-80082-Blue">
           <a href="https://www.linkedin.com/in/ryancruse1807/" target="_blank">LinkedIn</a>
